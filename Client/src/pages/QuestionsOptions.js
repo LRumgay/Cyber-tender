@@ -76,13 +76,28 @@ const QuestionsOptions = () => {
         
         {!currentQuestion.question && results.map((result) => (
           <>
+        <div className="container">
+<div class="row center">
+    <div class="col s12 m7 center">
+      <div class="card">
         <ul>{result.name}</ul>
+        <div class="card-image s6">
+          <img src={result.image}/>
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
         <ul>{result.ingredients.map((result) => (
           <ul>{result}</ul>
         ))}</ul>
-        <ul> </ul>
         <ul>DIRECTIONS: <br></br>  {result.directions}</ul>
-        <img alt="" src={result.image}/>
+        </div>
+        <div class="card-action">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+        <ul> </ul>
         
         </>
       ))}
@@ -97,3 +112,6 @@ const QuestionsOptions = () => {
 };
 
 export default QuestionsOptions;
+
+{/* <ul>DIRECTIONS: <br></br>  {result.directions}</ul>
+<img alt="" src={result.image}/> */}
