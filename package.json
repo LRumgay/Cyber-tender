@@ -1,9 +1,6 @@
 {
   "name": "cyber-tender",
   "version": "1.0.0",
-  "engines": {
-    "node": "16.4.2"
-  },
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,6 +8,7 @@
     "client": "cd ./Client && npm run start",
     "develop": "concurrently \"npm run server\" \"npm run client\"",
     "install": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
   },
@@ -41,5 +39,8 @@
     "eslint-plugin-import": "^2.24.2",
     "nodemon": "^2.0.12",
     "prettier": "^2.1.2"
+  },
+  "engines": {
+    "node": "16.4.2"
   }
 }
