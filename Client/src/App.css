@@ -47,7 +47,8 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
-/* neon hero */
+      /* neon hero */
+
 .cyber {
   text-align: center;
   font-size: 7em;
@@ -110,7 +111,8 @@ input[type=submit]:hover {
 }
 
 
-/* Custom Scrollbar */
+    /* Custom Scrollbar */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -128,6 +130,10 @@ input[type=submit]:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(26, 26, 26);
 }
+
+
+
+
 
 
 /* Clear floats after the columns */

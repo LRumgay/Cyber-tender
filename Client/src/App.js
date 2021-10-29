@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import Welcome from "./components/Welcome";
 import Navbar from "./components/Navbar";
 import Questions from "./components/Questions";
+import Iconbox from "./components/Iconbox";
+import Signup from "./components/Signup";
 import Footer from "./components/Footer";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import QuestionsOptions from "./pages/QuestionsOptions";
@@ -33,9 +35,13 @@ function App() {
         <main className="">
           <Navbar />
           <Hero />
+          <Iconbox />
           <Switch>
             <Route exact path="/">
               <Welcome />
+            </Route>
+            <Route exact path="/Signup">
+              <Signup />
             </Route>
             <Route exact path="/Questions">
               <QuestionsOptions />

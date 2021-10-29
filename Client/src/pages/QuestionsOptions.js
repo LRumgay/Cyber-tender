@@ -64,13 +64,33 @@ const QuestionsOptions = () => {
     setCurrentQuestion(nextQuestion || {});
   };
   console.log({ results });
+  
   return (
+  <>
     <div>
-      <h1>{currentQuestion.question}</h1>
-      {questionOptions.map((opt) => (
-        <Button onClick={() => onClickOption(opt)}>{opt}</Button>
+      <div className="row">
+        <h1>{currentQuestion.question}</h1>
+        {questionOptions.map((opt) => (
+          <Button onClick={() => onClickOption(opt)}>{opt}</Button>
+        ))}
+        {!currentQuestion.question && results.map((result) => (
+          <>
+        <li>{result.name}</li>
+        <li>{result.ingredients.map((result) => (
+          <li>{result}</li>
+        ))}</li>
+        <li>DIRECTIONS:  {result.directions}</li>
+        <img alt="" src={result.image}/>
+        
+        </>
       ))}
+      </div>
+
+
     </div>
+    
+    
+  </>
   );
 };
 
