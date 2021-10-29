@@ -8,6 +8,7 @@
     "client": "cd ./Client && npm run start",
     "develop": "concurrently \"npm run server\" \"npm run client\"",
     "install": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
   },
@@ -38,5 +39,8 @@
     "eslint-plugin-import": "^2.24.2",
     "nodemon": "^2.0.12",
     "prettier": "^2.1.2"
+  },
+  "engines": {
+    "node": "16.4.2"
   }
 }
