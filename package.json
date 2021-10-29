@@ -7,7 +7,7 @@
     "server": "cd ./server && npm run watch",
     "client": "cd ./Client && npm run start",
     "develop": "concurrently \"npm run server\" \"npm run client\"",
-    "install": "concurrently \"cd server && yarn install\" \"cd client && yarn install\"",
+    "install": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
   },
