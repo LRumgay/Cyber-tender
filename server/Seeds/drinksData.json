@@ -278,7 +278,7 @@
          "strong": "Strong",
          "ingredients": ["1 1/2 oz tequila añejo", "1/2 oz Paula’s Texas Lemon", "3 oz cranberry juice","1/4 tsp lime juice", "Splash of agave nectar" ],
          "directions": "Combine ingredients in a cocktail shaker filled with ice and shake well. Strain into a glass and add a splash of agave nectar.",
-         "image": "./Images/Cranberry_Splash"
+         "image": "./Images/Cranberry_Splash.png"
       },
       {
           "name": "CAMPFIRE MARGARITA",

@@ -73,13 +73,15 @@ const QuestionsOptions = () => {
         {questionOptions.map((opt) => (
           <Button onClick={() => onClickOption(opt)}>{opt}</Button>
         ))}
+        
         {!currentQuestion.question && results.map((result) => (
           <>
-        <li>{result.name}</li>
-        <li>{result.ingredients.map((result) => (
-          <li>{result}</li>
-        ))}</li>
-        <li>DIRECTIONS:  {result.directions}</li>
+        <ul>{result.name}</ul>
+        <ul>{result.ingredients.map((result) => (
+          <ul>{result}</ul>
+        ))}</ul>
+        <ul> </ul>
+        <ul>DIRECTIONS: <br></br>  {result.directions}</ul>
         <img alt="" src={result.image}/>
         
         </>
