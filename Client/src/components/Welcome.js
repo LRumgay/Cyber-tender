@@ -14,7 +14,7 @@ const Welcome = () => {
         </div>
           <div class="row">
             <div class="col s12 center">
-              <a href="#contact" class="btn btn-large grey darken-3">
+              <a href="#contact" class="btn pulse btn-large grey darken-3">
                   <Link to="/Questions" className="light-green-text">
                 <i class="material-icons left light-green-text">local_bar</i>Start Here
                 </Link>

@@ -67,23 +67,34 @@ const QuestionsOptions = () => {
   
   return (
   <>
-    <div>
-      <div className="row">
-        <h1>{currentQuestion.question}</h1>
-        {questionOptions.map((opt) => (
-          <Button onClick={() => onClickOption(opt)}>{opt}</Button>
-        ))}
+          <div class="container">
+        <div class="col s12 m8 l9 center">
+            <h1>
+            {currentQuestion.question}
+            </h1>
+        </div>
+        <div className="row">
+          <div className="col s12 center">
+          <a href="#contact">
+          {questionOptions.map((opt) => (
+            <Button class="btn btn-large waves-effect grey darken-3 light-green-text" onClick={() => onClickOption(opt)}>{opt}</Button>
+          ))}
+              </a>
+          </div>
+        </div>
         
+
+
         {!currentQuestion.question && results.map((result) => (
           <>
         <div className="container">
-<div class="row center">
-    <div class="col s12 m7 center">
-      <div class="card">
-        <ul>{result.name}</ul>
+    <div class="row">
+    <div class="col s6 offset-s3">
+      <div class="card center">
+        <h3>{result.name}</h3>
         <div class="card-image s6">
           <img src={result.image}/>
-          <span class="card-title">Card Title</span>
+          <span class="card-title responsive-img"></span>
         </div>
         <div class="card-content">
         <ul>{result.ingredients.map((result) => (
@@ -102,9 +113,6 @@ const QuestionsOptions = () => {
         </>
       ))}
       </div>
-
-
-    </div>
     
     
   </>
@@ -112,6 +120,3 @@ const QuestionsOptions = () => {
 };
 
 export default QuestionsOptions;
-
-{/* <ul>DIRECTIONS: <br></br>  {result.directions}</ul>
-<img alt="" src={result.image}/> */}

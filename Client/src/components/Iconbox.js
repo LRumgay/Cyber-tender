@@ -16,8 +16,8 @@ class Iconbox extends Component {
                 <div class="col s12 m4">
                   <div class="card-panel">
                     <i class="material-icons large light-green-text">assignment</i>
-                    <h4>Drink Menu</h4>
-                    <p>You can also browse our collection of cocktails, each with ingredients and directions.</p>
+                    <h4>Updates</h4>
+                    <p>We are looking to greatly improve Cyber Bar in the future. With many more features on the way.</p>
                   </div>
                 </div>
                 <div class="col s12 m4">

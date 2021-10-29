@@ -30,7 +30,6 @@ class Navbar extends Component {
     </div></li>
     <li><a href="#!"><i class="material-icons light-green-text">home</i>Home</a></li>
     <li><a href="#!"><i class="material-icons light-green-text">local_bar</i>The Cyber Bar</a></li>
-    <li><a href="#!"><i class="material-icons light-green-text">assignment</i>Drink Menu</a></li>
     <li><a href="#!"><i class="material-icons light-green-text">people</i>About Us</a></li>
   </ul>
   </div>
