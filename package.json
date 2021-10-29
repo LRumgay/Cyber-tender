@@ -1,6 +1,9 @@
 {
   "name": "cyber-tender",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.4.2"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
