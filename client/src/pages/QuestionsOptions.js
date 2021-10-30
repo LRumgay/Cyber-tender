@@ -70,13 +70,13 @@ const QuestionsOptions = () => {
           <div class="container">
         <div class="col s12 m8 l9 center">
             <h1>
-            {currentQuestion.question}
+            {currentQuestion?.question}
             </h1>
         </div>
         <div className="row">
           <div className="col s12 center">
           <a href="#contact">
-          {questionOptions.map((opt) => (
+          {questionOptions?.map((opt) => (
             <Button class="btn btn-large waves-effect grey darken-3 light-green-text" onClick={() => onClickOption(opt)}>{opt}</Button>
           ))}
               </a>
