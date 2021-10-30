@@ -85,7 +85,7 @@ const QuestionsOptions = () => {
         
 
 
-        {!currentQuestion.question && results.map((result) => (
+        {!currentQuestion?.question && results?.map((result) => (
           <>
         <div className="container">
     <div class="row">
