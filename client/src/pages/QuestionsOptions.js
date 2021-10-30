@@ -24,7 +24,7 @@ const QuestionsOptions = () => {
       getOptions({
         variables: {
           selectedOptions: [],
-          nextKey: dataQuestions.questions[0].key,
+          nextKey: dataQuestions.questions[0]?.key,
         },
       });
     }
