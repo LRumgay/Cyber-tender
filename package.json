@@ -2,13 +2,13 @@
   "name": "cyber-tender",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
+    "start": "node server/server.js",
     "server": "cd ./server && npm run watch",
-    "client": "cd ./Client && npm run start",
+    "client": "cd ./client && npm run start",
     "develop": "concurrently \"npm run server\" \"npm run client\"",
     "install": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
-
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
   },
